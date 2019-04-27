@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="books@localhost" uuid="e9e4b05c-7375-402f-a3c3-8a2c0f088ad7">
+      <database-info product="MySQL" version="5.7.17-log" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.7 ( Revision: ${svn.Revision} )" dbms="MYSQL" exact-version="5.7.17" exact-driver-version="5.1">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:books,shoutiji,test,testdb,wenxue,yaofang</introspection-schemas>
+    </data-source>
+    <data-source name="blog@118.89.36.148" uuid="2dfe741e-af67-4fb6-bdcb-4e6fe54727bd">
+      <database-info product="MySQL" version="5.5.60-MariaDB" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.7 ( Revision: ${svn.Revision} )" dbms="MARIADB" exact-version="5.5.60" exact-driver-version="5.1">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:@,shoutiji,test,wenxue,zabbix</introspection-schemas>
+    </data-source>
+  </component>
+</project>
