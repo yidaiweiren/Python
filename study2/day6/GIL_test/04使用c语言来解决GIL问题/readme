@@ -1,0 +1,2 @@
+(linux平台下)把一个C语言编译成一个动态库的命令：
+gcc xx.c -shared -o libxxx.so

@@ -1,0 +1,21 @@
+此章节所有功能均在ipython中调试
+包能更好的管理你的程序
+
+把功能相似的模块可以新建一个文件夹，这个文件见称为“包”
+包直接通过“import Testmsg”引用是不能使用的
+需要在包的下面同时创建一个"__init__.py"文件
+python2中，"__init__.py"中有没有东西无所谓，但是一定保证有这个文件名，python就可以导入这个包
+python3中可以直接导入包
+要想导入还能使用相应的功能，那就必须编辑__init__.py文件了。需要在这个文件中加入“__all__ = ["模块名"]”，方可使用
+
+python2中直接在__init__.py中使用“import sendmsg”,然后导入包，就能使用
+
+python3中直接在__init__.py中使用“import sendmsg”,导入包，不能使用
+python3需要在__init__.py中这样写“from . import sendmsg”,然后导入包，才能正常使用（注：这个方法同时兼容python2）
+
+包的构成
+    1.__init__.py
+    2.其他模块
+
+导入包的过程
+    1.先执行__init__.py这个文件

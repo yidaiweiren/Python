@@ -1,0 +1,32 @@
+1.什么是下载？
+2.怎样完成下载？
+	1.创建一个空文件
+	2.向里面写入数据
+	3.关闭
+
+模拟下载数据过程
+
+udpSocket = socket(AF_INET,SOCK_DGRAM)
+udpSocket.bind(("",6666))
+
+f = open("test.jp","bw")	#b：以二进制形式写
+
+while True:
+	recvData = udpSocket.recvfrom(1024)
+
+	if xxx:
+		没有数据了
+		break
+
+	else:
+		收到数据了
+		f.write(recvData)
+
+f.close()
+
+3.怎么发送？怎么接收？
+	使用tftp协议
+
+4.什么样的情况下知道服务器发送完毕了？
+	如果接收到的数据长度小于516字节，那么意味着“数据发送完毕”。可以使用len()方法判断
+5.怎么知道一个数据占用两个字节呢？

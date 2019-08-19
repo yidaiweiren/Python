@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="books@localhost" read-only="true" uuid="e9e4b05c-7375-402f-a3c3-8a2c0f088ad7">
+    <data-source source="LOCAL" name="books@localhost" uuid="e9e4b05c-7375-402f-a3c3-8a2c0f088ad7">
       <driver-ref>mysql</driver-ref>
-      <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/books</jdbc-url>
       <driver-properties>
@@ -27,6 +26,24 @@
         <property name="characterEncoding" value="utf8" />
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="soft.db" uuid="51e1b2c0-827f-42b6-afcc-91c2c50d60f6">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/Python从入门到实践/15-使用Python操作数据库/15.2-使用sqlite/soft.db</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="Django.sqlite" uuid="a3799d2f-db77-4f28-8f0c-1f99b90bb122">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../Django--demo/Django-1/django_test_1/db.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
       </driver-properties>
     </data-source>
   </component>

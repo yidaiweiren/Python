@@ -1,0 +1,16 @@
+1.fork（不会等到主进程结束）
+ret=os.fork()
+if ret==0:
+	#子进程
+else:
+	#父进程
+
+
+2.Porcess(主进程会等到子进程执行完毕在结束)
+p = Porcess(target=xxxx)
+p.start()
+
+3.Pool()
+pool = Pool(3)
+pool.apply.async(xxxxx)
+主进程一般都在等待，真正的任务都在子进程中执行

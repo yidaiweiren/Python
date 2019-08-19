@@ -1,0 +1,14 @@
+创建一个tcp socket(tcp套接字)
+import socket
+
+s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+
+print("tcp socket create")
+
+
+创建一个udp socket(udp套接字)
+import socket
+
+s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+
+print("udp socket create")

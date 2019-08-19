@@ -9,7 +9,7 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <introspection-schemas>*:books,shoutiji,test,testdb,wenxue,yaofang</introspection-schemas>
+      <introspection-schemas>*:book,books,shoutiji,t5s6bq,test,testdb,wenxue,yaofang</introspection-schemas>
     </data-source>
     <data-source name="blog@118.89.36.148" uuid="2dfe741e-af67-4fb6-bdcb-4e6fe54727bd">
       <database-info product="MySQL" version="5.5.60-MariaDB" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.7 ( Revision: ${svn.Revision} )" dbms="MARIADB" exact-version="5.5.60" exact-driver-version="5.1">
@@ -20,6 +20,24 @@
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <introspection-schemas>*:@,shoutiji,test,wenxue,zabbix</introspection-schemas>
+    </data-source>
+    <data-source name="soft.db" uuid="51e1b2c0-827f-42b6-afcc-91c2c50d60f6">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:*</introspection-schemas>
+    </data-source>
+    <data-source name="Django.sqlite" uuid="a3799d2f-db77-4f28-8f0c-1f99b90bb122">
+      <database-info product="SQLite" version="3.25.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.25.1" dbms="SQLITE" exact-version="3.25.1" exact-driver-version="3.25">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
     </data-source>
   </component>
 </project>

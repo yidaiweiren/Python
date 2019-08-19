@@ -1,0 +1,16 @@
+发布模块
+在包的同级目录创建setup.py安装文件
+
+发布步骤
+    1.编辑setup.py,按照下方版本写入
+        from distutils.core import setup
+        setup(name='姓名',version='版本',description='描述',author='作者',py_modules=["包名.需要引入的模块名"])
+
+    2.输入：python3 setup.py build
+    3.输入：python3 setup.py sdist
+        生成所需要的压缩包
+    4.将生成的sdist目录下的压缩吧分享给别人
+    5.别人拿到压缩包，然后进行解包
+        tar -zxvf ***.gz
+    6.别人安装
+        python3 setup.py install
