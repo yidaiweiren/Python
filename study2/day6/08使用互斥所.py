@@ -36,11 +36,11 @@ def test2():
 
 	#解锁
 	mutex.release()
+	print("-----in test2, g_num is %d-----" % g_num)
 '''
 用来对mutex指向的这个锁，进行解锁，只要开了锁，接下来会让所有因为这个锁 被上了锁，而造成堵塞的线程，进行抢着上锁
 '''		
 
-	print("-----in test2, g_num is %d-----"%g_num)
 
 
 #创建一把互斥锁，默认这把锁是打开的
