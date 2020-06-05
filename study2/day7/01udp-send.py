@@ -4,4 +4,4 @@ from socket import *
 udpSocket = socket(AF_INET,SOCK_DGRAM)
 
 #发送给谁
-udpSocket.sendto(b"haha",("10.217.11.92",8080))
+udpSocket.sendto(b"haha",("127.0.0.1",8080))

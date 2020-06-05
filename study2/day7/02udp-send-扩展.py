@@ -6,7 +6,7 @@ import time
 udpSocket = socket(AF_INET,SOCK_DGRAM)
 
 #准备接受方地址
-sendAddr = ("10.217.11.92",8080)
+sendAddr = ("127.0.0.1",8080)
 
 
 while True:
